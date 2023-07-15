@@ -8,7 +8,7 @@ import './assets/styles/main.scss'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <App />
   </Router>
 );
